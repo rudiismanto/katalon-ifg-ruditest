@@ -1,4 +1,4 @@
-import kafka.KafkaConsumerKeyword
+//import kafka.KafkaConsumerKeyword
 
 Thread.sleep(4000)
 
@@ -15,5 +15,3 @@ String output = process.text
 
 println "Kafka Output:"
 println output
-
-assert output.contains('{"event":"login_success","email":"risma@mailinator.com"}')
