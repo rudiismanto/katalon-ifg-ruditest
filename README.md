@@ -1,0 +1,1 @@
+# katalon-ifg-ruditest
