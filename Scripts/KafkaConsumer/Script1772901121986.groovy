@@ -2,13 +2,6 @@ import kafka.KafkaConsumerKeyword
 
 Thread.sleep(4000)
 
-//String message = KafkaConsumerKeyword.readMessage("login-topic")
-//
-//println("Kafka Message: " + message)
-//
-//assert message != null
-//assert message.contains("login_success")
-
 String command = """
 bash -c "timeout 5 kafka-console-consumer \
 --topic login-topic \
