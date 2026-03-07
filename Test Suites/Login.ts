@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Login</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>10</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>76dc701a-fbee-47aa-b934-1f6dfbb527b4</testSuiteGuid>
+   <testCaseLink>
+      <guid>be1536ef-2de6-41fd-b44e-079e0dd9f5d6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Login</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>3744edaa-053a-4f56-bbb2-21c4843b3e31</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/New Test Data</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>3744edaa-053a-4f56-bbb2-21c4843b3e31</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>usename</value>
+         <variableId>acbba918-df40-4387-a469-08bdc29e2acb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3744edaa-053a-4f56-bbb2-21c4843b3e31</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
+         <variableId>8b9be19e-2863-4141-ae19-66daeb1f8d0d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3744edaa-053a-4f56-bbb2-21c4843b3e31</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>httpcode</value>
+         <variableId>bc494040-4826-4828-a811-13da8f1c1363</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8872a6d3-662f-4f7d-b5af-f648c3b251c8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/KafkaProducer</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2b980bbf-c54b-49a8-bdb5-5b29cf006d72</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/KafkaConsumer</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+</TestSuiteEntity>
