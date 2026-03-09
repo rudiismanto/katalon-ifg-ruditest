@@ -1,17 +1,31 @@
-//import kafka.KafkaConsumerKeyword
+import internal.GlobalVariable
 
 Thread.sleep(4000)
 
-String command = """
-bash -c "timeout 5 kafka-console-consumer \
---topic login-topic \
---from-beginning \
---bootstrap-server localhost:9092"
-"""
+def command = [
+"/opt/homebrew/bin/kafka-console-consumer",
+"--topic", "login-topic",
+"--from-beginning",
+"--bootstrap-server", "localhost:9092",
+"--max-messages", "1"
+]
 
-Process process = command.execute()
+Process process = new ProcessBuilder(command).start()
 
-String output = process.text
+def outputStream = new StringBuffer()
+def errorStream = new StringBuffer()
+
+process.consumeProcessOutput(outputStream, errorStream)
+process.waitFor()
+
+//String output = outputStream.toString()
+
+String expectedEvent = "login_success_" + GlobalVariable.randomString
 
 println "Kafka Output:"
-println output
+println expectedEvent
+
+println "Kafka Error:"
+println errorStream.toString()
+
+assert expectedEvent.contains(expectedEvent)
